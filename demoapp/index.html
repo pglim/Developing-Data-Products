@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Shiny application to calculate the area of circle using slider to input radius</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Simple Shiny application to calculate the area of circle using slider to input radius">
+  <meta name="author" content="Lim Poh Guan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Simple Shiny application to calculate the area of circle using slider to input radius</h1>
+    <h2></h2>
+    <p>Lim Poh Guan<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>2. Executive Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a simple application to demo the using of shiny in R programming to calculate the area of circle by moving the slider to input the radius.</p>
+
+<h3>A. Input</h3>
+
+<p>The radius is default at 50 with a range from 0 to 100. The input method is using slider widget.</p>
+
+<h3>B. Process</h3>
+
+<p>The formula of the area of circle is pi * r * r where r is the radius.</p>
+
+<h3>C. Output</h3>
+
+<p>The result is a table form that shown the area of circle to 2 decimal points.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>3. Area of Circle</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">radius = 50
+area = round(radius * radius * pi,2)
+area
+</code></pre>
+
+<pre><code>## [1] 7853.98
+</code></pre>
+
+<h2>Areas for default radius of 50 is 7853.98</h2>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>4. Sample of output run from Shinyapps.io</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="%22UM.png%22" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>5. References</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>A. Link for the source code for server.R and ui.R:</h3>
+
+<p><a href="https://github.com/pglim/Developing-Data-Products.git">https://github.com/pglim/Developing-Data-Products.git</a></p>
+
+<h3>B. Link for running the application :</h3>
+
+<p><a href="https://pglim.shinyapps.io/shiny">https://pglim.shinyapps.io/shiny</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='2. Executive Summary'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='3. Area of Circle'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='4. Sample of output run from Shinyapps.io'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='5. References'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
